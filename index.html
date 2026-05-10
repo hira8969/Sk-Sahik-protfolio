@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sk Sahik Ali - BCA Student, Full Stack Developer, AI/ML Enthusiast, AR/VR Developer, and Problem Solver.">
+  <meta name="keywords" content="Sk Sahik Ali, portfolio, full stack developer, AI ML, AR VR, BCA, Centurion University">
+  <meta name="author" content="Sk Sahik Ali">
+  <meta name="theme-color" content="#070816">
+  <title>Sk Sahik Ali | Futuristic Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading portfolio">
+    <div class="loader__orb"></div>
+    <div class="loader__text">Initializing Portfolio</div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <canvas class="galaxy-canvas" id="galaxyCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="nav shell" aria-label="Primary navigation">
+      <a class="brand magnetic" href="#home" aria-label="Sk Sahik Ali home">
+        <span class="brand__mark">SA</span>
+        <span>Sk Sahik Ali</span>
+      </a>
+      <button class="nav__toggle magnetic" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav__actions">
+        <button class="icon-btn magnetic" id="soundToggle" type="button" aria-label="Toggle ambient sound">
+          <span class="icon">♪</span>
+        </button>
+        <button class="theme-toggle magnetic" id="themeToggle" type="button" aria-label="Toggle light mode">
+          <span class="theme-toggle__track"><span></span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero__light hero__light--one"></div>
+      <div class="hero__light hero__light--two"></div>
+      <div class="floating-tech" aria-hidden="true">
+        <span style="--i:1">HTML</span><span style="--i:2">AI</span><span style="--i:3">VR</span>
+        <span style="--i:4">JS</span><span style="--i:5">ML</span><span style="--i:6">3D</span>
+      </div>
+      <div class="hero__grid shell">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Portfolio / 2026</p>
+          <h1>Hi, I’m <span>Sk Sahik Ali</span></h1>
+          <p class="hero__role">I build as a <strong id="typedRole">Full Stack Developer</strong></p>
+          <p class="hero__copy">
+            BCA student, full stack developer, AI/ML enthusiast, AR/VR explorer, and problem solver creating intelligent digital experiences with cinematic interfaces.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary magnetic" href="#projects">View Projects</a>
+            <a class="btn btn--ghost magnetic" href="asset/Sk%20Sahik%20Ali-Resume.pdf" download>Download Resume</a>
+            <a class="btn btn--soft magnetic" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero__stats">
+            <div><strong data-count="8">0</strong><span>Featured Projects</span></div>
+            <div><strong data-count="14">0</strong><span>Core Skills</span></div>
+            <div><strong data-count="4">0</strong><span>AI/ML Builds</span></div>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="holo-card tilt spotlight">
+            <div class="avatar-orbit">
+              <div class="avatar-ring"></div>
+              <div class="avatar">
+                <img src="asset/img.jpg" alt="Portrait of Sk Sahik Ali">
+                <span>SA</span>
+              </div>
+            </div>
+            <div class="holo-card__meta">
+              <span>Active Status</span>
+              <strong>Building Future Interfaces</strong>
+              <div class="holo-card__chips" aria-label="Portfolio focus areas">
+                <em>AI/ML</em>
+                <em>Full Stack</em>
+                <em>AR/VR</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about"><span></span></a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">About</p>
+          <h2>Creative technologist with a builder’s mindset.</h2>
+          <p>I combine strong foundations, practical product thinking, and emerging technology to design systems that feel useful, alive, and memorable.</p>
+        </div>
+        <div class="about__layout">
+          <div class="glass-panel about__story reveal spotlight">
+            <h3>Sk Sahik Ali</h3>
+            <p>Age 20. Currently pursuing BCA from Centurion University and completed PGDCA. Passionate about AI, full stack development, AR/VR, and innovative technologies.</p>
+            <div class="info-grid">
+              <div><span>Name</span><strong>Sk Sahik Ali</strong></div>
+              <div><span>Age</span><strong>20</strong></div>
+              <div><span>Degree</span><strong>BCA</strong></div>
+              <div><span>Focus</span><strong>AI + Full Stack</strong></div>
+            </div>
+          </div>
+          <div class="timeline reveal">
+            <article class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <p>Foundation</p>
+                <h3>Completed PGDCA</h3>
+                <span>Strengthened computing fundamentals, productivity tools, and software basics.</span>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <p>Current</p>
+                <h3>BCA at Centurion University</h3>
+                <span>Deepening computer applications, programming, data systems, and modern development.</span>
+              </div>
+            </article>
+            <article class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <p>Next</p>
+                <h3>AI, AR/VR, and Product Engineering</h3>
+                <span>Building practical projects that blend intelligence, immersive design, and web technology.</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Technology stack designed for modern products.</h2>
+        </div>
+        <div class="skills__grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Premium project showcase with practical impact.</h2>
+        </div>
+        <div class="projects__grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Internship journey and achievement signals.</h2>
+        </div>
+        <div class="experience__layout">
+          <div class="glass-panel reveal spotlight">
+            <p class="eyebrow">TimesPro Internship</p>
+            <h3>Professional learning through real-world exposure.</h3>
+            <p>Worked through structured internship activities focused on applied technology, communication, and project-oriented problem solving.</p>
+            <div class="achievement-list">
+              <span>Team collaboration</span>
+              <span>Technical documentation</span>
+              <span>Problem analysis</span>
+              <span>Delivery discipline</span>
+            </div>
+          </div>
+          <div class="achievements reveal">
+            <div class="achievement-card tilt"><strong data-count="8">0</strong><span>Projects Completed</span></div>
+            <div class="achievement-card tilt"><strong data-count="14">0</strong><span>Technologies Learned</span></div>
+            <div class="achievement-card tilt"><strong data-count="1">0</strong><span>Internship Experience</span></div>
+            <div class="achievement-card tilt"><strong data-count="4">0</strong><span>AI/ML Projects</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something intelligent and beautiful.</h2>
+        </div>
+        <div class="contact__layout">
+          <div class="contact__info reveal">
+            <a class="contact-card magnetic spotlight" href="tel:+910000000000">
+              <span>Phone</span><strong>+91 00000 00000</strong>
+            </a>
+            <a class="contact-card magnetic spotlight" href="mailto:sksahikali@example.com">
+              <span>Email</span><strong>sksahikali@example.com</strong>
+            </a>
+            <div class="contact-card spotlight">
+              <span>Address</span><strong>Odisha, India</strong>
+            </div>
+            <div class="socials">
+              <a class="magnetic" href="#" aria-label="GitHub">GitHub</a>
+              <a class="magnetic" href="https://www.linkedin.com/home?originalSubdomain=in" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+              <a class="magnetic" href="#" aria-label="Instagram">Instagram</a>
+            </div>
+            <iframe class="map" title="Google map showing Odisha, India" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Odisha%2C%20India&output=embed"></iframe>
+          </div>
+          <form class="contact-form reveal spotlight" id="contactForm" novalidate>
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" minlength="2" required>
+              <small>Please enter at least 2 characters.</small>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required>
+              <small>Please enter a valid email address.</small>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" placeholder="Tell me about your project" minlength="10" required></textarea>
+              <small>Please enter at least 10 characters.</small>
+            </label>
+            <button class="btn btn--primary magnetic" type="submit">Send Message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top magnetic" id="backToTop" type="button" aria-label="Back to top">↑</button>
+
+  <footer class="footer">
+    <div class="footer__wave" aria-hidden="true"></div>
+    <div class="shell footer__inner">
+      <p>Designed & Developed by Sk Sahik Ali</p>
+      <span>© 2026 All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
