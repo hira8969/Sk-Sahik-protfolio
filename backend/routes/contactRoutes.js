@@ -1,4 +1,8 @@
-// Native HTTP route map placeholder for future MVC expansion.
-module.exports = {
-  contact: "/api/contact"
-};
+const express = require("express");
+const { createContact } = require("../controllers/contactController");
+
+const router = express.Router();
+
+router.post("/", createContact);
+
+module.exports = router;

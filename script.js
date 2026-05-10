@@ -503,7 +503,7 @@ function initContactForm() {
     submitButton.textContent = "Sending...";
 
     try {
-      const response = await fetch("http://localhost:3000/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
@@ -515,7 +515,7 @@ function initContactForm() {
       form.reset();
     } catch (error) {
       localStorage.setItem("latest-contact-message", JSON.stringify({ ...payload, createdAt: new Date().toISOString() }));
-      status.textContent = "Message saved locally. Start the backend to receive it through /api/contact.";
+      status.textContent = "Message saved locally. Run the backend server to send it through /api/contact.";
       status.style.color = "var(--green)";
       form.reset();
     } finally {
