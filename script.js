@@ -1,8 +1,8 @@
 const roles = [
   "BCA Student",
+  "Cloud Computing Intern",
   "Full Stack Developer",
-  "AI/ML Enthusiast",
-  "AR/VR Developer",
+  "AI/NLP Enthusiast",
   "Problem Solver"
 ];
 
@@ -11,27 +11,29 @@ const skills = [
   ["CSS", "CSS", 92],
   ["JavaScript", "JS", 88],
   ["Python", "PY", 86],
-  ["Machine Learning", "ML", 82],
-  ["TensorFlow", "TF", 76],
-  ["OpenCV", "CV", 78],
-  ["Dash", "DS", 74],
-  ["Unity", "UN", 72],
-  ["Blender", "BL", 70],
+  ["Cloud Computing", "CC", 84],
+  ["AWS Lambda", "L", 80],
+  ["Amazon S3", "S3", 82],
+  ["API Gateway", "API", 78],
+  ["AI/NLP", "NLP", 82],
+  ["Data Analysis", "DA", 80],
   ["MongoDB", "DB", 80],
-  ["Firebase", "FB", 78],
-  ["Flask", "FL", 82],
   ["Git & GitHub", "GH", 88]
 ];
 
 const projects = [
-  ["Hospital Management System", "Patient, doctor, billing, and appointment workflow dashboard.", ["HTML", "CSS", "JS", "Flask"], "HMS"],
-  ["Vehicle Price Prediction System", "ML model interface for estimating vehicle prices from key features.", ["Python", "ML", "Flask"], "VPP"],
-  ["Student Course Application Web Portal", "Responsive portal for course applications, student data, and status tracking.", ["HTML", "JS", "Firebase"], "SCA"],
-  ["AR/VR Environment Design Project", "Immersive 3D scene design with interactive spatial experiences.", ["Unity", "Blender", "C#"], "ARV"],
-  ["Smart Garbage Segregation System", "AI-assisted waste classification concept for cleaner public systems.", ["OpenCV", "AI", "Python"], "SGS"],
-  ["Pothole Detection & Reporting System", "Detection and reporting flow for road issue visibility and action.", ["OpenCV", "Dash", "Maps"], "PDR"],
-  ["Anti-Scam AI System", "Signal-based scam detection assistant for safer digital communication.", ["AI", "NLP", "Python"], "ASA"],
-  ["Farmer Market Prediction System", "Data-driven prediction interface for agriculture market decisions.", ["ML", "Dash", "Python"], "FMP"]
+  [
+    "Serverless Image Processing App",
+    "Cloud app where users upload an image and the system automatically compresses it, converts the format, and generates thumbnails using a serverless workflow.",
+    ["AWS Lambda", "S3", "API Gateway", "Image Compression", "Thumbnails"],
+    "SIP"
+  ],
+  [
+    "AI Resume Analyser",
+    "Full-stack AI/NLP tool that extracts resume text from PDF/DOCX files, analyzes skills, education, experience, missing keywords, and creates downloadable cloud-stored reports.",
+    ["Cloud Computing", "AI/NLP", "Full Stack", "Data Analysis", "ATS Score"],
+    "ARA"
+  ]
 ];
 
 const projectAccents = [
